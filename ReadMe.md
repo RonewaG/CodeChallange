@@ -30,3 +30,20 @@ CodeChallenge/test/
 * test_team_rankings.py     
 * test_team.py          
 README.md 
+```
+
+## How to run
+
+
+```
+python3 main.py < input.txt
+```
+
+input file example
+```
+Lions 3, Snakes 3
+Tarantulas 1, FC Awesome 0
+Lions 1, FC Awesome 1
+Tarantulas 3, Snakes 1
+Lions 4, Grouches 0
+```
