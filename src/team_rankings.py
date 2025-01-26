@@ -8,12 +8,14 @@ class TeamRankings:
     def __str__(self):
         output = []
         ranked_teams = self.rank_teams()
-        rank = 1
+        last_points = None
+        rank = 0
 
-        for i, team in enumerate(ranked_teams):
+        for i, team in enumerate(ranked_teams, start=1):
+            if team.points != last_points:
+                rank = i
             suffix = "pt" if team.points == 1 else "pts"
             output.append(f"{rank}. {team.name}, {team.points} {suffix}")
-            rank += 1
+            last_points = team.points
 
         return "\n".join(output)
-

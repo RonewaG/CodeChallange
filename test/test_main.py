@@ -15,7 +15,7 @@ class TestMain(unittest.TestCase):
 
         expected_output = (
             "1. Lions, 4 pts\n"
-            "2. Spider, 4 pts\n"
+            "1. Spider, 4 pts\n"
             "3. Leopard, 0 pts\n"
         )
         self.assertEqual(mock_stdout.getvalue(), expected_output)
