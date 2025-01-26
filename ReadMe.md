@@ -47,3 +47,9 @@ Lions 1, FC Awesome 1
 Tarantulas 3, Snakes 1
 Lions 4, Grouches 0
 ```
+
+## How to run tests
+
+```
+python3 -m unittest *.py 
+```
